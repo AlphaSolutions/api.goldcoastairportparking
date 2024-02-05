@@ -87,22 +87,9 @@ defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest auto
 /*My defined cosntants*/
 
 $hostName   = gethostname();
-$appEnv     = 'DEV';
-$sysoutLogPath  = 'c://wamp/www/api.alphaairportparking.com.au';
-if($hostName == 'centprod2.alphanameserver.com')
-{
-    $sysoutLogPath = '/home/aapalpha';
-    $appEnv = 'PROD';
-}
-else if($hostName == 'dev.alphanameserver.com')
-{
-    $appEnv = 'STAGING';
-    $sysoutLogPath  = '/home/alphapk';
-}
-else if(strtoupper(gethostname()) == 'DESKTOP-0PPFG48')
-{
-    $sysoutLogPath  = 'c://xampp/htdocs/api.alphaairportparking.com.au';
-}
+
+$appEnv = 'PROD';
+$sysoutLogPath = '/home/express/api.expressairportparking.com.au';
 
 define('APP_ENV', $appEnv);
 
