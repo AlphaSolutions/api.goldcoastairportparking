@@ -5,9 +5,9 @@ $active_group = 'default';
 $query_builder = TRUE;
 
 $hostName = 'localhost';
-$userName = 'express';
-$password = 'bc8ine4b7fbk8qfzq0gt';
-$dbName = 'aapalpha';
+$userName = 'alpha';
+$password = '1lh5nz7uwqtkjutn8akd';
+$dbName = 'gcap_api';
 
 $db['default'] = array(
     'dsn'   => '',

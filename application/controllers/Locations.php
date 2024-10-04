@@ -52,7 +52,7 @@ class Locations extends MY_Controller
         $this->load->model('Washes_model');
 
         //Get locations
-        $where = "active = 1 AND location_id != 3";
+        $where = "active = 1"; // AND location_id != 3";
         $resGetLocations = $this->Locations_model->get_where($where);
 
         if(empty($resGetLocations))

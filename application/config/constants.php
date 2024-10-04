@@ -89,7 +89,7 @@ defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest auto
 $hostName   = gethostname();
 
 $appEnv = 'PROD';
-$sysoutLogPath = '/home/express/api.expressairportparking.com.au';
+$sysoutLogPath = '/home/alpha/api.goldcoastairportparking.com.au';
 
 define('APP_ENV', $appEnv);
 
