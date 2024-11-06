@@ -48,6 +48,7 @@ class Bookings extends MY_Controller
         $this->load->model('Bookings_log_model');
 
         $locationId     = isset($_POST['location_id']) ? $_POST['location_id'] : '';
+        $bookingPrefixCode     = isset($_POST['booking_prefix_code']) ? $_POST['booking_prefix_code'] : '';
         $arrivalDate    = isset($_POST['arrival_date']) ? $_POST['arrival_date'] : '';
         $departureDate  = isset($_POST['departure_date']) ? $_POST['departure_date'] : '';
         $vehicleTypeId  = isset($_POST['vehicle_type_id']) ? $_POST['vehicle_type_id'] : '';
@@ -171,6 +172,7 @@ class Bookings extends MY_Controller
 
         $bookingData = [
                 'location_id'       => $locationId,
+                'booking_prefix_code' => $bookingPrefixCode,
                 'arrival_date'      => $arrivalDate,
                 'arrival_time'      => $arrivalTime . '00',
                 'departure_date'    => $departureDate,
@@ -248,6 +250,7 @@ class Bookings extends MY_Controller
 
         $data = [
                 'booking_id'        => $bookingProdId,
+                'booking_prefix_code' => $bookingPrefixCode,
                 'local_booking_id'  => $booking_id,
                 'local_book_no'     => $bookNo,
                 'parking_cost'      => $originalCost,
